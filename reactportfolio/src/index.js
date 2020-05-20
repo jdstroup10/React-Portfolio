@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 //import App from './App';
 import Navigation from './navigation';
+import Portfolio from './portfolio';
+import Footer from './Footer'
 import Header from './Header'
-import { BrowserRouter as Router} from 'react-router-dom';
-import Route from 'react-router-dom/Route';
 import * as serviceWorker from './serviceWorker';
 
 class App extends Component {
@@ -13,9 +13,11 @@ class App extends Component {
     return(
       <div>
       <Navigation LogoTitle="React Portfolio" />
-      <Header title="UT Boot Camp Portfolio">
-        
+      <Header title="UT Boot Camp Portfolio" button="Find Out More">
       </Header>
+      <Portfolio></Portfolio>
+      <Footer LogoTitle="Contact me: jdstroup10@gmail.com || 512-925-9287" />
+
       </div>
     );
   }
